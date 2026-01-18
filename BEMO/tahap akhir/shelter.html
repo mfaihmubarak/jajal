@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Shelter - BEMO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+  <script defer src="js/shelter.js"></script>
+</head>
+<body>
+
+<div class="app-container">
+  <h2>📍 Shelter Transportasi Bandung</h2>
+
+  <div class="feature-grid">
+    <div class="feature-item" onclick="pilihShelter('TMB')">🚌 TMB</div>
+    <div class="feature-item" onclick="pilihShelter('BOSEH')">🚲 BOSEH</div>
+    <div class="feature-item" onclick="pilihShelter('Angkot')">🚕 Angkot</div>
+    <div class="feature-item" onclick="pilihShelter('Bandros')">🚌 Bandros</div>
+  </div>
+
+  <button onclick="cariShelterTerdekat()" style="margin-top:16px;">
+    📍 Cari Shelter Terdekat
+  </button>
+
+  <div id="hasilShelter" style="margin-top:20px;"></div>
+</div> <!-- PENUTUP app-container -->
+
+<nav class="bottom-nav">
+  <button onclick="goHome()">🏠</button>
+  <button onclick="goTo('map.html')">🗺️</button>
+  <button class="active">📍</button>
+  <button>🔔</button>
+  <button>👤</button>
+</nav>
+
+</body>
+</html>

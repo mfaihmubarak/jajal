@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>BEMO – Mobile Next Gen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+
+  <div class="app-container">
+
+    <!-- Header -->
+    <header class="app-header">
+      <h1>BEMO</h1>
+      <span>Mobile Next Gen</span>
+    </header>
+
+    <!-- Mode Demo -->
+    <div class="demo-banner">
+      Mode Demo Prototype – BEMO Mobile Next Gen
+    </div>
+
+    <!-- Search -->
+    <div class="search-bar">
+  <input type="text" id="searchInput" placeholder="Mau ke mana hari ini?">
+</div>
+
+    <!-- Google Maps Preview -->
+<div class="maps-preview">
+  <iframe 
+    src="https://www.google.com/maps?q=Bandung&output=embed"
+    width="100%" 
+    height="240" 
+    style="border:0; border-radius:16px;"
+    allowfullscreen="" 
+    loading="lazy">
+  </iframe>
+</div>
+
+    <!-- Feature Grid -->
+    <div class="feature-grid">
+      <div class="feature-item" onclick="goTo('map.html')">🗺️ Peta</div>
+      <div class="feature-item" onclick="goTo('ticket.html')">🎫 Tiket</div>
+      <div class="feature-item" onclick="goTo('routes.html')">🧭 Rute</div>
+      <div class="feature-item" onclick="goTo('shelter.html')">📍 Shelter</div>
+      <div class="feature-item" onclick="goTo('boseh.html')">🚲 BOSEH</div>
+      <div class="feature-item" onclick="goTo('angkot.html')">🚕 Angkot</div>
+      <div class="feature-item" onclick="goTo('transjabar.html')">🚌 Trans Jabar</div>
+      <div class="feature-item" onclick="goTo('busschool.html')">🎓 Bus Sekolah</div>
+      <div class="feature-item" onclick="goTo('bandros.html')">🚌 Bandros</div>
+      <div class="feature-item" onclick="goTo('report.html')">📢 Pengaduan</div>
+      <div class="feature-item" onclick="goTo('news.html')">📰 Berita</div>
+      <div class="feature-item" onclick="goTo('ai.html')">🤖 AI</div>
+    </div>
+
+  </div> <!-- PENUTUP app-container -->
+
+  <!-- Bottom Navigation -->
+  <nav class="bottom-nav">
+  <button onclick="goHome()">🏠</button>
+  <button onclick="goTo('map.html')">🗺️</button>
+  <button onclick="goTo('routes.html')">➕</button>
+  <button onclick="goTo('notifications.html')">🔔</button>
+  <button onclick="goTo('profile.html')">👤</button>
+</nav>
+
+</body>
+</html>

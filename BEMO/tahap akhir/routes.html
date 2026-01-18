@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Rute - BEMO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+  <script defer src="js/routes.js"></script>
+</head>
+<body>
+
+<div class="app-container">
+  <h2>🧭 Rute Transportasi</h2>
+
+  <div class="feature-grid">
+    <div class="feature-item" onclick="pilihRute('TMB')">🚌 TMB</div>
+    <div class="feature-item" onclick="pilihRute('Bus Sekolah')">🎓 Bus Sekolah</div>
+    <div class="feature-item" onclick="pilihRute('Bandros')">🚌 Bandros</div>
+    <div class="feature-item" onclick="pilihRute('Angkot')">🚕 Angkot</div>
+  </div>
+
+  <div id="hasilRute" style="margin-top:20px;"></div>
+</div> <!-- PENUTUP app-container -->
+
+<nav class="bottom-nav">
+  <button onclick="goHome()">🏠</button>
+  <button onclick="goTo('map.html')">🗺️</button>
+  <button onclick="goTo('routes.html')">➕</button>
+  <button onclick="goTo('notifications.html')">🔔</button>
+  <button onclick="goTo('profile.html')">👤</button>
+</nav>
+
+</body>
+</html>
